@@ -1,0 +1,449 @@
+:root {
+    --black: #000000;
+    --yellow: #e4d612;
+    --white: #ebebeb;
+    --green: #22a701;
+}
+
+.header {
+    position: absolute;
+    padding-bottom: 5px;
+    background-color: var(--white);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.0.5rem 0.5rem #444141;
+    z-index: 3;
+}
+
+.header .left-content img {
+    filter: drop-shadow(2px 2px 2px rgb(8, 8, 8));
+    margin: 5px 300px;
+}
+
+.header .right-menu {
+    font-family: 'Gotham Book';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 80px;
+    gap: 100px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header .right-menu a {
+    color: var(--black);
+    font-size: 40px;
+}
+
+.header .right-menu a:hover {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: var(--yellow);
+}
+
+.carrousel-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.carrousel-background .carrousel-img {
+    position: absolute;
+    padding-top: 100px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+.main-content .carrousel-img.show {
+    display: block;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.main-content .infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.main-content .infos img {
+    filter: drop-shadow(2px 2px 2px rgb(8, 8, 8));
+    margin-bottom: 20px;
+    width: 760px;
+}
+
+.main-content .infos p {
+    font-family: 'Gotham Light';
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.main-content .infos .marked {
+    text-shadow: 1px 1px 2px var(--yellow);
+}
+
+.main-content .infos .main-button {
+    background-color: var(--white);
+    font-family: 'Gotham Book';
+    font-size: 20px;
+    color: var(--black);
+    width: 300px;
+    height: 80px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-content .infos .main-button:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: var(--yellow);
+    box-shadow: 5px 5px 2.5px 0px var(--yellow);
+}
+
+.aside {
+    left: 90%;
+    top: 83%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.aside .right-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-shadow: 1px 1px 2px var(--black);
+
+}
+
+.aside .right-content p {
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.aside .right-content a {
+    font-size: 75px;
+    color: var(--white);
+}
+
+.right-content a:hover {
+    color: var(--green);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.footer-left .social-icons {
+    z-index: 5;
+    display: flex;
+    gap: 45px;
+    position: absolute;
+    top: 87%;
+    left: 4%;
+    text-shadow: 1px 1px 2px var(--black);
+
+}
+
+.social-icons a {
+    font-size: 65px;
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: yellow;
+}
+
+/* Responsividade */
+
+@media (max-width: 1510px){
+    .header .right-menu{
+        padding: -20px;
+        margin: 30px 80px;
+        gap: 50px;
+    }
+
+    .header .right-menu a{
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 1374px){
+    .header .left-content img { 
+        margin-top: 15px;
+        width: 150px;
+    }
+    
+    .header .right-menu {
+        align-items: flex-start;
+        /* margin: 35px 25px; */
+    }
+    
+    .header .right-menu a {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1291px){
+    .header .left-content img { 
+        margin-top: 15px;
+        margin-left: 85px;
+        width: 150px;
+    }
+    
+    .header .right-menu {
+        align-items: flex-start;
+        margin: 35px 45px;
+    }
+    
+    .header .right-menu a {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .main-content .infos img {
+        width: 650px;
+    }
+    
+    .main-content .infos p {
+        font-size: 35px;
+    }
+    
+    .main-content .infos .main-button {
+        margin-top: 25px;
+        width: 200px;
+        height: 60px;
+        font-size: 18px;
+    }
+    
+    .aside .right-content a {
+        font-size: 50px;
+    }
+    
+    .footer-left .social-icons a {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .left-content img {
+        margin: 15px 50px;
+        width: 150px;
+    }
+    
+    .header .right-menu {
+        align-items: center;
+        margin: 40px 40px;
+        gap: 30px;
+    }
+    
+    .header .right-menu a {
+        font-size: 23px;
+    }
+    
+    .main-content .infos img {
+        width: 550px;
+    }
+    
+    .main-content .infos p {
+        font-size: 25px;
+    }
+    
+    .main-content .infos .main-button {
+        line-height: 25px;
+        width: 200px;
+        height: 80px;
+        font-size: 18px;
+    }
+    
+    .aside {
+        left: 90%;
+    }
+    
+    .aside .right-content a {
+        font-size: 40px;
+    }
+    
+    .footer-left .social-icons{
+        top: 90%;
+    }
+
+    .footer-left .social-icons a {
+        font-size: 35px;
+    }
+}
+
+/* @media (max-width: 425px) {
+    .header{
+        height: auto;
+    }
+    .header .left-content img {
+        margin: 20px 50px;
+        width: 120px;
+    }
+
+    .header .right-menu {
+        flex-direction: column;
+        margin: 10px 60px;
+        gap: 15px;
+    }
+
+    .header .right-menu a {
+        font-size: 20px;
+    }
+
+    .main-content .infos img {
+        width: 300px;
+    }
+
+    .main-content .infos p {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .main-content .infos .main-button {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .aside {
+        left: 70%;
+    }
+
+    .aside .right-content a {
+        font-size: 35px;
+    }
+
+    .footer-left .social-icons a {
+        font-size: 35px;
+    }
+} */
+
+@media (max-width: 425px) {
+    .header .left-content img {
+        margin: 25px 35px;
+        width: 120px;
+    }
+
+    .header .right-menu {
+        flex-direction: column;
+        margin: 15px 60px;
+        gap: 16px;
+    }
+
+    .header .right-menu a {
+        font-size: 18px;
+    }
+
+    .main-content .infos img {
+        width: 350px;
+    }
+
+    .main-content .infos p {
+        font-size: 22px;
+        margin: 7px 0 30px;
+        
+    }
+
+    .main-content .infos .main-button {
+        width: 120px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .aside {
+        top: 85.2%;
+        left: 82%;
+    }
+
+    .aside .right-content a {
+        font-size: 35px;
+    }
+
+    .footer-left .social-icons a {
+        font-size: 35px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header .left-content img {
+        width: 100px;
+    }
+
+    .header .right-menu a {
+        font-size: 16px;
+    }
+
+    .aside{
+        top: 84.5%;
+        font-size: 30px;
+    }
+
+    .footer-left .social-icons a {
+        font-size: 30px;
+        margin-left: 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header .left-content img {
+        margin: 30px;
+        width: 65px;
+    }
+
+    .header .right-menu a {
+        font-size: 14px;
+    }
+
+    .main-content .infos img {
+        width: 320px;
+    }
+
+    .main-content .infos p {
+        font-size: 20px;
+        margin: 5px;
+    } 
+
+    /* .main-content .infos .main-button {
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+    } */
+
+    .aside{
+        top: 83.5%;
+    }
+
+    .aside .right-content a {
+        font-size: 25px;
+    }
+
+    .footer-left .social-icons a {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+}

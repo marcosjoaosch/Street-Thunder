@@ -1,0 +1,11 @@
+/* @media (max-width: 1650px){
+    .header .right-menu{
+        margin:0px
+    }
+} */
+
+@media (max-width: 1500px){
+    .header {
+        background-color: aqua;
+    }
+}

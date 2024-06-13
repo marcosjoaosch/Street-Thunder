@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --black: #000000;
+    --yellow: #e4d612;
+    --white: #ebebeb;
+    --green: #22a701;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(../fonts/Gotham-Black.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url(../fonts/Gotham-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oregon';
+    src: url(../fonts/OregonStreet.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url(../fonts/GothamBook.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(54, 54, 54);
+    font-family: 'Gotham';
+}
