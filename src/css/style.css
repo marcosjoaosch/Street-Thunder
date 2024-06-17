@@ -20,6 +20,12 @@
 .header .left-content img {
     filter: drop-shadow(2px 2px 2px rgb(8, 8, 8));
     margin: 5px 300px;
+    transition: 0.2s ease-in-out;
+}
+
+.header .left-content img:hover{
+    filter: drop-shadow(2px 2px 2px var(--yellow));
+
 }
 
 .header .right-menu {
@@ -375,7 +381,7 @@
     }
 
     .aside {
-        top: 85.2%;
+        top: 85.1%;
         left: 82%;
     }
 

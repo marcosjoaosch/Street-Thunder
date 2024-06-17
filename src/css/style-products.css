@@ -1,0 +1,187 @@
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/stc-logo-preta.jpeg);
+    background-size: cover;
+}
+
+
+.header {
+    padding-bottom: 5px;
+    background-color: var(--white);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0.0.5rem 0.5rem #111111;
+    z-index: 3;
+}
+
+.header .left-content img {
+    filter: drop-shadow(2px 2px 2px rgb(8, 8, 8));
+    margin: 5px 300px;
+    transition: 0.2s ease-in-out;
+}
+
+.header .left-content img:hover {
+    filter: drop-shadow(2px 2px 2px var(--yellow));
+
+}
+
+.header .right-menu {
+    font-family: 'Gotham Book';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 80px;
+    gap: 100px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header .right-menu a {
+    color: var(--black);
+    font-size: 40px;
+}
+
+.header .right-menu a:hover {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    color: var(--yellow);
+}
+
+.products-content {
+    margin-top: 80px;
+}
+
+.container {
+    margin-left: 200px;
+}
+
+.arrows {
+    color: var(--white);
+    position: absolute;
+    top: 60%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows .show {
+    opacity: 1;
+}
+
+.arrows .back-arrow {
+    font-size: 75px;
+}
+
+.arrows .back-arrow:hover {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+.arrows .foward-arrow {
+    position: fixed;
+    font-size: 75px;
+    left: 95%;
+}
+
+.arrows .foward-arrow:hover {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+
+.product {
+    opacity: 0;
+    display: none;
+}
+
+
+.product.showing {
+    display: flex;
+    opacity: 1;
+
+}
+
+.product .shirts {
+    filter: drop-shadow(-2px 1px 4px var(--yellow));
+    height: 50%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.product .hats {
+    margin-top: 80px;
+    margin-left: -95px;
+    filter: drop-shadow(-2px 1px 4px var(--yellow));
+    width: 43%;
+    border-radius: 10px;
+}
+
+.product .product-infos {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.product-infos h1 {
+    margin-bottom: 45px;
+    font-size: 75px;
+    text-shadow: 1px 1px 8px var(--yellow);
+}
+
+.product-infos p {
+    line-height: 50px;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px var(--black);
+    margin-bottom: 55px;
+}
+
+.product-infos .buy-button {
+    background-color: var(--white);
+    font-size: 20px;
+    color: var(--black);
+    width: 250px;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.product-infos .buy-button:hover {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: var(--green);
+    color: var(--white);
+    box-shadow: 5px 5px 2.5px 2px var(--black);
+}
+
+.marked {
+    text-shadow: 1px 1px 12px var(--yellow);
+}
+
+.social-icons {
+    padding-top: 55px;
+    display: flex;
+    gap: 205px;
+    text-shadow: 1px 1px 2px var(--black);
+
+}
+
+.social-icons a {
+    font-size: 45px;
+    color: var(--white);
+    transition: 0.4s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: yellow;
+}
