@@ -301,53 +301,6 @@
     }
 }
 
-/* @media (max-width: 425px) {
-    .header{
-        height: auto;
-    }
-    .header .left-content img {
-        margin: 20px 50px;
-        width: 120px;
-    }
-
-    .header .right-menu {
-        flex-direction: column;
-        margin: 10px 60px;
-        gap: 15px;
-    }
-
-    .header .right-menu a {
-        font-size: 20px;
-    }
-
-    .main-content .infos img {
-        width: 300px;
-    }
-
-    .main-content .infos p {
-        font-size: 20px;
-        margin: 10px;
-    }
-
-    .main-content .infos .main-button {
-        width: 150px;
-        height: 50px;
-        font-size: 14px;
-    }
-
-    .aside {
-        left: 70%;
-    }
-
-    .aside .right-content a {
-        font-size: 35px;
-    }
-
-    .footer-left .social-icons a {
-        font-size: 35px;
-    }
-} */
-
 @media (max-width: 425px) {
     .header .left-content img {
         margin: 25px 35px;

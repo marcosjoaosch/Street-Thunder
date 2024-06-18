@@ -50,14 +50,6 @@ body {
     color: var(--yellow);
 }
 
-.products-content {
-    margin-top: 80px;
-}
-
-.container {
-    margin-left: 200px;
-}
-
 .arrows {
     color: var(--white);
     position: absolute;
@@ -93,17 +85,31 @@ body {
     color: var(--yellow);
 }
 
-
-.product {
-    opacity: 0;
-    display: none;
+.products-content {
+    padding-top: 80px;
 }
 
+.container {
+    margin-left: 200px;
+}
+
+.product {
+    /* opacity: 0; */
+    display: none;
+    /* transition: opacity 0.3s ease-in-out; */
+}
+
+.image {
+    opacity: 0;
+}
+
+.image.fade-in {
+    opacity: 1;
+}
 
 .product.showing {
     display: flex;
     opacity: 1;
-
 }
 
 .product .shirts {
@@ -111,6 +117,10 @@ body {
     height: 50%;
     width: 30%;
     border-radius: 10px;
+}
+
+.product.fade {
+    opacity: 0;
 }
 
 .product .hats {
@@ -184,4 +194,205 @@ body {
 
 .social-icons a:hover {
     color: yellow;
+}
+
+/* Responsivo */
+
+@media (max-width: 1510px){
+    body{
+        background-size: 110%;
+    }
+
+    .header{
+        margin-bottom: 100px;
+    }
+
+    .header .right-menu{
+        padding: -20px;
+        margin: 30px 80px;
+        gap: 50px;
+    }
+
+    .header .right-menu a{
+        font-size: 33px;
+    }
+
+
+    .product-infos h1{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+    .product-infos p {
+        font-size: 30px;
+    }
+
+    .product-infos a{
+        margin-bottom: 45px;
+    }
+}
+
+
+
+
+@media (max-width: 1440px) {
+    body {
+        background-size: 120%;
+    }
+    
+    .header{
+        margin-bottom: 0px;
+    }
+
+    .header .right-menu{
+        padding: -20px;
+        margin: 30px 80px;
+        gap: 50px;
+    }
+
+    .header .right-menu a{
+        font-size: 33px;
+    }
+
+
+    .container {
+        margin-top: 50px;
+    }
+
+
+
+}
+
+@media (max-width: 1024px) {
+    body{
+        background-size: 180%;
+        background-position: center;
+    }
+
+    .header .left-content img { 
+        margin-top: 15px;
+        margin-left: 85px;
+        width: 150px;
+    }
+    
+    .header .right-menu {
+        align-items: flex-start;
+        margin: 35px 45px;
+    }
+    
+    .header .right-menu a {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container{
+        margin-left: 50px;
+    }
+
+    .product .hats{
+        width: 350px;
+        height: 350px;
+        margin-left: 30px;
+    }
+
+    .product .shirts{
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+
+    .product-infos {
+        gap: 5px;
+    }
+
+    .product-infos h1{
+        margin: 40px;
+        padding-top: 50px;
+    }
+
+    .product-infos p{
+        margin: 15px;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .buy-button{
+        margin-top: 15px;
+    }
+
+    .social-icons{
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+    }
+
+    .arrows .foward-arrow{
+        position: relative;
+        left: 580%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header .left-content img {
+        margin: 15px 50px;
+        width: 150px;
+    }
+
+    .header .right-menu {
+        align-items: center;
+        margin: 40px 40px;
+        gap: 30px;
+    }
+
+    .header .right-menu a {
+        font-size: 23px;
+    }
+
+    .main-content .infos img {
+        width: 550px;
+    }
+
+    .main-content .infos p {
+        font-size: 25px;
+    }
+
+    .main-content .infos .main-button {
+        line-height: 25px;
+        width: 200px;
+        height: 80px;
+        font-size: 18px;
+    }
+
+    .aside {
+        left: 90%;
+    }
+
+    .aside .right-content a {
+        font-size: 40px;
+    }
+
+    .footer-left .social-icons {
+        top: 90%;
+    }
+
+    .footer-left .social-icons a {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header .left-content img {
+        margin: 20px 25px;
+        width: 120px;
+    }
+
+    .header .right-menu {
+        flex-direction: column;
+        margin: 15px 50px;
+        gap: 16px;
+    }
+
+    .header .right-menu a {
+        font-size: 21px;
+    }
 }
