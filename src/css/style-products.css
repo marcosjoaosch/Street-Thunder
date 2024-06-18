@@ -198,27 +198,27 @@ body {
 
 /* Responsivo */
 
-@media (max-width: 1510px){
-    body{
+@media (max-width: 1510px) {
+    body {
         background-size: 110%;
     }
 
-    .header{
+    .header {
         margin-bottom: 100px;
     }
 
-    .header .right-menu{
+    .header .right-menu {
         padding: -20px;
         margin: 30px 80px;
         gap: 50px;
     }
 
-    .header .right-menu a{
+    .header .right-menu a {
         font-size: 33px;
     }
 
 
-    .product-infos h1{
+    .product-infos h1 {
         margin-top: 30px;
         font-size: 40px;
     }
@@ -227,7 +227,7 @@ body {
         font-size: 30px;
     }
 
-    .product-infos a{
+    .product-infos a {
         margin-bottom: 45px;
     }
 }
@@ -239,18 +239,18 @@ body {
     body {
         background-size: 120%;
     }
-    
-    .header{
+
+    .header {
         margin-bottom: 0px;
     }
 
-    .header .right-menu{
+    .header .right-menu {
         padding: -20px;
         margin: 30px 80px;
         gap: 50px;
     }
 
-    .header .right-menu a{
+    .header .right-menu a {
         font-size: 33px;
     }
 
@@ -264,38 +264,38 @@ body {
 }
 
 @media (max-width: 1024px) {
-    body{
+    body {
         background-size: 180%;
         background-position: center;
     }
 
-    .header .left-content img { 
+    .header .left-content img {
         margin-top: 15px;
         margin-left: 85px;
         width: 150px;
     }
-    
+
     .header .right-menu {
         align-items: flex-start;
         margin: 35px 45px;
     }
-    
+
     .header .right-menu a {
         font-size: 30px;
         text-align: center;
     }
 
-    .container{
+    .container {
         margin-left: 50px;
     }
 
-    .product .hats{
+    .product .hats {
         width: 350px;
         height: 350px;
         margin-left: 30px;
     }
 
-    .product .shirts{
+    .product .shirts {
         margin-left: 30px;
         margin-top: 50px;
     }
@@ -304,28 +304,28 @@ body {
         gap: 5px;
     }
 
-    .product-infos h1{
+    .product-infos h1 {
         margin: 40px;
         padding-top: 50px;
     }
 
-    .product-infos p{
+    .product-infos p {
         margin: 15px;
         line-height: 25px;
         font-size: 20px;
     }
 
-    .buy-button{
+    .buy-button {
         margin-top: 15px;
     }
 
-    .social-icons{
+    .social-icons {
         padding: 0;
         margin: 0;
         gap: 50px;
     }
 
-    .arrows .foward-arrow{
+    .arrows .foward-arrow {
         position: relative;
         left: 580%;
     }
@@ -333,6 +333,11 @@ body {
 
 
 @media (max-width: 768px) {
+    body {
+        background-size: 225%;
+        background-position: center;
+    }
+
     .header .left-content img {
         margin: 15px 50px;
         width: 150px;
@@ -348,51 +353,226 @@ body {
         font-size: 23px;
     }
 
-    .main-content .infos img {
-        width: 550px;
+    .product {
+        margin: 0;
+        flex-direction: column;
     }
 
-    .main-content .infos p {
-        font-size: 25px;
+    .container {
+        margin-left: 0px;
     }
 
-    .main-content .infos .main-button {
+    .products-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .product .hats {
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+        margin-left: 280px;
+    }
+
+    .product .shirts {
+        margin-left: 280px;
+        margin-top: 0px;
+    }
+
+    .product-infos {
+        gap: 15px;
+    }
+
+    .product-infos h1 {
+        margin: 0px;
+        padding-top: 40px;
+    }
+
+    .product-infos p {
+        margin: 0px;
         line-height: 25px;
-        width: 200px;
-        height: 80px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .aside {
-        left: 90%;
+    .buy-button {
+        margin-top: 0px;
     }
 
-    .aside .right-content a {
-        font-size: 40px;
+    .social-icons {
+        padding: 0;
+        margin: 0;
+        gap: 50px;
     }
 
-    .footer-left .social-icons {
-        top: 90%;
-    }
-
-    .footer-left .social-icons a {
-        font-size: 35px;
+    .arrows .foward-arrow {
+        position: relative;
+        left: 400%;
     }
 }
 
+
+
+
+
+
+
+
 @media (max-width: 425px) {
+    body {
+        background-size: 200vh;
+        background-position: center;
+    }
+
     .header .left-content img {
-        margin: 20px 25px;
+        margin: 25px 35px;
         width: 120px;
     }
 
     .header .right-menu {
         flex-direction: column;
-        margin: 15px 50px;
+        margin: 15px 60px;
         gap: 16px;
     }
 
     .header .right-menu a {
-        font-size: 21px;
+        font-size: 18px;
+    }
+
+    .arrows {
+        top: 58%;
+    }
+
+    .arrows .foward-arrow {
+        position: relative;
+        left: 185%;
+    }
+
+    .container {
+        margin-top: 25px;
+    }
+
+    .product .shirts {
+        width: 55%;
+        margin-left: 100px;
+        margin-top: 0px;
+    }
+
+    .product .hats {
+        width: 300px;
+        height: 300px;
+        margin-top: 0;
+        margin-left: 80px;
+    }
+
+    .product-infos {
+        gap: 0px;
+    }
+
+    .product-infos h1 {
+        margin-bottom: 15px;
+        padding-top: 50px;
+    }
+
+    .product-infos p {
+        margin: 15px;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .buy-button {
+        margin-top: 15px;
+    }
+
+    .social-icons {
+        padding: 0;
+        margin: 0;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header .left-content img {
+        width: 100px;
+    }
+
+    .header .right-menu a {
+        font-size: 16px;
+    }
+
+    .arrows {
+        font-size: 10x;
+    }
+
+    .arrows .foward-arrow {
+        font-size: 50px;
+        position: relative;
+        left: 275%;
+    }
+
+    .arrows .back-arrow {
+        font-size: 50px;
+    }
+
+    .product .hats {
+        width: 230px;
+        height: 230px;
+        margin: 20px 80px;
+    }
+
+    .product-infos {
+        margin: 0;
+    }
+
+    .product-infos h1 {
+        margin: 0;
+        font-size: 35px;
+    }
+
+    .product-infos p {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    .header .left-content img {
+        margin: 30px;
+        width: 65px;
+    }
+
+    .header .right-menu a {
+        font-size: 14px;
+    }
+
+    .arrows .foward-arrow {
+        font-size: 50px;
+        position: relative;
+        left: 220%;
+    }
+
+    .product .shirts{
+        margin:5px 80px 40px;
+
+    }
+
+    .product .hats{
+        margin: 10px 50px 40px;
+    }
+
+    .product-infos h1{
+        padding-top: 20px;
+        margin-bottom: 25px
     }
 }
