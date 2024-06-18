@@ -410,13 +410,6 @@ body {
     }
 }
 
-
-
-
-
-
-
-
 @media (max-width: 425px) {
     body {
         background-size: 200vh;
@@ -443,8 +436,13 @@ body {
     }
 
     .arrows .foward-arrow {
+        font-size: 65px;
         position: relative;
-        left: 185%;
+        left: 225%;
+    }
+
+    .arrows .back-arrow{
+        font-size: 65px;
     }
 
     .container {
